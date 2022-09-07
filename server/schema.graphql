@@ -1,0 +1,13 @@
+type Query {
+  candleSticks:[CandleStick!]
+  candleSticksByNumber(limit:Int!):[CandleStick!]!
+  getCandleStickByDate(date:String!):CandleStick
+}
+
+type CandleStick {
+  date:String!
+  open:Float!
+  close:Float!
+  lowest:Float!
+  highest:Float!
+}
